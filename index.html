@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "W05sJakj-UQY0hdaB",
+      });
+   })();
+</script>
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Muhammed
+            <span>Aman</span> </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h1>Hi, It's <span>Aman</span></h1>
+            <h3>I'm a <span>Front End Developer</span></h3>
+            <p>Hello! I'm Muhammed Aman, a passionate newcomer to the world of frontend development with big dreams of becoming a full-stack developer</p>
+
+            <div class="social-icons">
+                <a href="#">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+
+        </div>
+
+
+
+        <div class="home-img">
+            <img src="image.jpg" alt="">
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>Welcome! I'm Muhammed Aman, an aspiring frontend developer fueled by ambition and a hunger for knowledge. With a background in [mention any relevant background or education], I've embarked on an exciting journey into the realm of web development with a clear goal in mind: to evolve into a proficient full-stack developer.
+                Every line of code I write is infused with dedication and a commitment to excellence. While I may be at the beginning of my career, I'm determined to make my mark in the tech industry by mastering the intricacies of frontend technologies such as HTML, CSS, and JavaScript.  
+                What drives me is the endless potential for creativity and innovation that this field offers. From crafting elegant user interfaces to optimizing website performance, I'm passionate about creating digital experiences that captivate and inspire.  
+                As I navigate through this dynamic landscape, I approach each challenge as an opportunity to learn and grow. I thrive in collaborative environments where ideas are shared, problems are solved, and innovations are born.
+                Join me on this exhilarating journey as I strive to push the boundaries of what's possible in web development. Together, let's build the future, one line of code at a time.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="skill"  id="skill">
+        <h2 class="heading">Skill</h2>
+
+
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="skill-info">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Mobile App Development</h4>
+                    <p>Mobile app development refers to the process of creating software applications that run on mobile devices, such as smartphones and tablets. It involves a variety of tasks including designing, building, testing, and deploying applications for iOS, Android, or other mobile platforms. Mobile apps can serve various purposes, from entertainment and social networking to productivity and e-commerce</p>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-info">
+                    <i class="bx bx-code"></i>
+                    <h4>Frontend Development</h4>
+                    <p>Frontend development, also known as client-side development, involves creating the visual elements and user interfaces of websites and web applications. It encompasses HTML, CSS, and JavaScript, which are the building blocks of web development. Frontend developers are responsible for ensuring that websites are visually appealing, responsive, and user-friendly across different devices and browsers</p>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-info">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>Backend Development</h4>
+                    <p>Backend development, also referred to as server-side development, involves building and maintaining the server-side logic, databases, and APIs that power web applications. Backend developers work with languages such as Python, Ruby, Java, PHP, and frameworks like Node.js and Django. They are responsible for handling data storage, user authentication, server configuration, and ensuring the smooth functioning of web applications</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="project" id="project">
+        <div class="top-header">
+            <h2 class="heading">Project</h2>
+        </div>
+        <div class="project-container">
+            <div class="project-box">
+                <i class='bx bxs-briefcase'></i>
+                <h2>Completed</h2>
+                <label>10 Finsished Projects</label>
+            </div>
+
+            <div class="project-box">
+                <i class='bx bxs-user'></i>
+                <h2>Clients</h2>
+                <label>8 Clients</label>
+            </div>
+
+            <div class="project-box">
+                <i class='bx bxs-award'></i>
+                <h2>Experience</h2>
+                <label>1+ Years in the field</label>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+
+        <form action="#" class="content" >
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" id="name">
+                    <input type="email" placeholder="Email" id="email">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" id="phone">
+                    <input type="text" placeholder="Subject" id="text">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" >
+                </textarea>
+                <input type="submit" value="Send Message" class="btn" onclick="sendMail()">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-twitter"></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#skill">Skill</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright text-warning ">
+            Muhammed Aman || All Rights Reserved
+        </p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
